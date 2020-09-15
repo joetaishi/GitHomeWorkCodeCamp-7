@@ -3,7 +3,12 @@
 
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
     background-color: #17A2B8;
+    align-items: center;
 }
 
 
@@ -13,5 +18,18 @@ body {
     padding: 1em;
     margin: 1em; 
     width: 400px;
+    position: relative;
+    border-radius: 20px;
+    
        
+}
+
+.btn{
+    background-color: #17A2B8;
+    width: 100%;
+}
+
+.Login{
+    text-align: center;
+
 }
