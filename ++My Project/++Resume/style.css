@@ -1,5 +1,5 @@
 /*Google Font*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"rel="stylesheet");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 /*Variables CSS*/
 :root {
@@ -9,7 +9,7 @@
 
 /*Colors*/
 :root {
-  --first-color: #4070f4;
+  --first-color: #5c02c4;
   --second-color: #0e2431;
 }
 
@@ -138,11 +138,77 @@ img {
   .nav__menu {
     position: fixed;
     top: var(--header-height);
-    right: 0;
+    right: -100%;
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: rgb(51, 17, 112);
+    background-color: var(--second-color);
     transition: 0.5s;
   }
+}
+
+.nav__item {
+  margin-bottom: var(--mb-4);
+}
+.nav__link {
+  position: relative;
+  color: #fff;
+}
+.nav__link:hover {
+  position: relative;
+}
+.nav__link:hover::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.18rem;
+  left: 0;
+  top: 2rem;
+  background-color: var(--first-color);
+}
+.nav__logo {
+  color: var(--second-color);
+}
+.nav__toggle {
+  color: var(--second-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/*Active Menu*/
+.active::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.18rem;
+  left: 0;
+  top: 2rem;
+  background-color: var(--first-color);
+}
+
+/*Show Menu*/
+.show {
+  right: 0;
+}
+
+/**Home**/
+.home {
+  height: calc(100vh - 3rem);
+  row-gap: 1rem;
+}
+.home__data {
+  align-self: center;
+}
+.home__title {
+  font-size: var(--big-font-size);
+  margin-bottom: var(--mb-5);
+}
+.home__title-color {
+  color: var(--first-color);
+}
+.home__social {
+  width: max-content;
+  margin-bottom: var(--mb-2);
+  font-size: 2rem;
+  color: var(--second-color);
 }
