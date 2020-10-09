@@ -61,6 +61,8 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
+  /*Added Background Color*/
+  background-image: linear-gradient(50deg,#def8f7, #fff);
 }
 h1,
 h2,
@@ -124,7 +126,7 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background-color: #fff;
-  box-shadow: 0 1px 4px rgb(39, 3, 3);
+  box-shadow: 0 3px 4px rgb(39, 3, 3);
 }
 
 /*NAV*/
@@ -135,6 +137,8 @@ img {
   align-items: center;
   font-weight: var(--font-semi);
 }
+
+/*Slide In Block*/
 @media screen and (max-width: 768px) {
   .nav__menu {
     position: fixed;
@@ -143,8 +147,10 @@ img {
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: var(--second-color);
+    background-image: linear-gradient(100deg,var(--first-color),rgb(33, 185, 40));
+    /* background-color: var(--second-color); */
     transition: 0.5s;
+    border-radius: 1.2rem;
   }
 }
 
@@ -165,7 +171,7 @@ img {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--first-color);
+  background-color: #fff;
 }
 .nav__logo {
   color: var(--second-color);
@@ -209,12 +215,13 @@ img {
 }
 .home__social {
   display: flex;
-  /* flex-direction: column; **************Check Again*/
+  /* **************Check Again */
+  flex-direction: column; 
 }
 .home__social-icon {
   width: max-content;
   margin-bottom: var(--mb-2);
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--second-color);
 }
 
@@ -224,7 +231,7 @@ img {
 
 /*Check Again if needed*****************/
 .home__img {
-  justify-content: center;
+  position: absolute;
   right: 0;
   bottom: 0;
   width: 200px;
@@ -238,9 +245,9 @@ img {
   display: inline-block;
   background-color: var(--first-color);
   color: #fff;
-  padding: 0.75rem 2.5rem;
+  padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
-  border-radius: 0.5rem;
+  border-radius: .5rem;
 }
 .button:hover {
   box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
@@ -440,9 +447,12 @@ img {
     margin-bottom: 0;
     margin-right: var(--mb-4);
   }
+
+
+  /*Home Sizing 768*/
   .home__img{
-    width: 457px;
-    bottom: 15%;
+    width: 200px;
+    bottom: 10%;
   }
 
   .about__container{
@@ -475,6 +485,6 @@ img {
     margin-right: auto;
   }
   .home__img{
-    right: 10%;
+    right: 5%;
   }
 }
