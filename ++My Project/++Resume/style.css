@@ -87,7 +87,7 @@ img {
   font-size: var(--h2-font-size);
   color: var(--first-color);
   margin-top: var(--mb-2);
-  margin-bottom: var(--mb-2);
+  margin-bottom: var(--mb-4);
   text-align: center;
 }
 .section-title::after {
@@ -288,4 +288,38 @@ img {
   font-size: 2rem;
   margin-right: var(--mb-2);
   color: var(--first-color);
+}
+.skills__names {
+  display: flex;
+  align-items: center;
+}
+.skills__bar {
+  position: absolute;
+  left: 0rem;
+  bottom: 0;
+  background-color: var(--first-color);
+  height: 0.25rem;
+  border-radius: 0.5rem;
+  z-index: var(--z-back);
+}
+.skills__html {
+  width: 75%;
+}
+.skills__css {
+  width: 70%;
+}
+.skills__js {
+  width: 60%;
+}
+.skills__english {
+  width: 95%;
+}
+.skills__creativity {
+  width: 86%;
+}
+.skills__m-c {
+  width: 80%;
+}
+.skills__img {
+  border-radius: 0.5rem;
 }
