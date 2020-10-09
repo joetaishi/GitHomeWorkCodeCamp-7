@@ -1,91 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paans Resume</title>
 
-    <!--Main CSS-->
-    <link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paans Resume</title>
 
-    <!--Boxicon-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!--Header-->
-    <header class="l-header">
-      <nav class="nav bd-grid">
+  <!--Main CSS-->
+  <link rel="stylesheet" href="style.css" />
+
+  <!--Boxicon-->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!--Header-->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <a href="#" class="nav__logo">Suttitham Jampatong</a>
+      </div>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link active">Home</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main">
+    <!--Home-->
+    <section class="home bd-grid" id="home">
+      <div class="home__data">
+        <hi class="home__title">Hi, <br>I'm <span class="home__title-color"> Suttitham</span>, you can call me
+          Paan<br><b>A Junior Software Developer</b> </hi><br>
+        <a href="#" class="button"><b>Contact</b> <br>Tel: 083-296-5432<br>Email: suttitham.jpt@hotmail.com</a>
+      </div>
+
+      <div class="home__social">
+        <a href="#" class="home__social-icon"><i class='bx bxl-git'></i></a>
+      </div>
+
+      <div class="home__img">
+        <img src="img/frontImg.jpg" alt="" srcset="">
+      </div>
+
+    </section>
+
+
+    <!--About-->
+    <section class="about section" id="about">
+      <h2 class="section-title">About</h2>
+
+      <div class="about__container bd-grid">
+        <div class="about__img">
+          <img src="img/about Img.jpg" alt="" srcset="">
+        </div>
+
         <div>
-          <a href="#" class="nav__logo">Suttitham Jampatong</a>
+          <h2 class="about__subtitle">I'm Suttitham</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quo eum hic cupiditate deserunt sapiente,
+            eligendi molestiae ex assumenda velit quas iste incidunt labore id nesciunt, a vero quidem accusantium.</p>
+
+        </div>
+    </section>
+
+
+    <!--Skill-->
+    <section class="skills section" id="skills">
+      <div>
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills__container bd-grid">
+          <h2 class="skills__subtitles">Professional Skills</h2>
+          <p class="skills__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis velit quibusdam, unde
+            tempore at porro, fuga consequatur sed est cum ad, quasi laboriosam earum culpa autem. Expedita porro amet
+            voluptatem!</p>
         </div>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#" class="nav__link active">Home</a>
-            </li>
-            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Work</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-menu"></i>
-        </div>
-      </nav>
-    </header>
-
-    <main class="l-main">
-      <!--Home-->
-      <section class="home bd-grid" id="home">
-        <div class="home__data">
-          <hi class="home__title">Hi, <br>I'm <span class="home__title-color"> Suttitham</span>, you can call me Paan<br><b>A Junior Software Developer</b> </hi><br>
-          <a href="#" class="button"><b>Contact</b> <br>Tel: 083-296-5432<br>Email: suttitham.jpt@hotmail.com</a>
-        </div>
-
-          <div class="home__social">
-            <a href="#" class="home__social-icon"><i class='bx bxl-git'></i></a>
+        <div class="skills__data">
+          <div class="skills__names">
+            <i class='bx bxl-html5 skills__icon'></i>
+            <span class="skills__name">HTML</span>
           </div>
 
-            <div class="home__img">
-              <img src="img/frontImg.jpg" alt="" srcset="">
-            </div>
-        
-      </section>
+          <div>
+            <span class="skills__percentage">75%</span>
+          </div>
+
+          <div class="skills__bar skills__html"></div>
+        </div>
 
 
-       <!--About-->
-<section class="about section" id="about">
-<h2 class="section-title">About</h2>
+        <div class="skills__data">
+          <div class="skills__names">
+            <i class='bx bxl-css3 skills__icon'></i>
+            <span class="skill_name">CSS</span>
+          </div>
+          <div>
+            <span class="skills__percentage">70%</span>
+          </div>
 
-<div class="about__container bd-grid">
-  <div class="about__img">
-    <img src="img/about Img.jpg" alt="" srcset="">
-  </div>
-
-  <div>
-<h2 class="about__subtitle">I'm Suttitham</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quo eum hic cupiditate deserunt sapiente, eligendi molestiae ex assumenda velit quas iste incidunt labore id nesciunt, a vero quidem accusantium.</p>
-
-</div>
-</section>
-
-
- <!--Skill-->
+          <div class="skills__bar skills__html"></div>
+        </div>
 
 
 
- <!--Work-->
+        <div class="skills__data">
+          <div class="skills__names">
+            <i class='bx bxl-javascript skills__icon'></i>
+            <span class="skill_name">JavaScript</span>
+          </div>
+          <div>
+            <span class="skills__percentage">60%</span>
+          </div>
+
+          <div class="skills__bar skills__html"></div>
+        </div>
 
 
 
 
-  <!--Contact->
+        <div class="skills__data">
+          <div class="skills__names">
+            <i class='bx bx-world skills__icon'></i>
+            <span class="skill_name">English Skills</span>
+          </div>
+          <div>
+            <span class="skills__percentage">95%</span>
+          </div>
+
+          <div class="skills__bar skills__html"></div>
+        </div>
+
+
+
+        <div class="skills__data">
+          <div class="skills__names">
+            <i class='bx bx-cool skills__icon'></i>
+            <span class="skill_name">Creativity</span>
+          </div>
+          <div>
+            <span class="skills__percentage">86%</span>
+          </div>
+
+          <div class="skills__bar skills__html"></div>
+        </div>
+
+
+
+        <div class="skills__data">
+          <div class="skills__names">
+            <i class='bx bxs-hand-right skills__icon'></i>
+            <span class="skill_name">Management & Coordination</span>
+          </div>
+          <div>
+            <span class="skills__percentage">80%</span>
+          </div>
+
+          <div class="skills__bar skills__html"></div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!--Work-->
+
+
+
+
+    <!--Contact->
 
 
 
@@ -97,5 +194,6 @@
     <!--Main JS-->
 
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
