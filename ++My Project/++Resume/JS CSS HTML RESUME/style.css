@@ -237,7 +237,7 @@ img {
   width: 200px;
 }
 .home__img img {
-  border-radius: 0.5rem;
+  border-radius: 2rem;
 }
 
 /*Button*/
@@ -267,7 +267,7 @@ img {
 }
 .about__img img {
   width: 200px;
-  border-radius: 0.5rem;
+  border-radius: 2rem;
 }
 
 /*SKills*/
@@ -313,10 +313,10 @@ img {
   z-index: var(--z-back);
 }
 .skills__html {
-  width: 75%;
+  width: 70%;
 }
 .skills__css {
-  width: 70%;
+  width: 65%;
 }
 .skills__js {
   width: 55%;
@@ -453,8 +453,11 @@ img {
 
   /*Home Sizing 768*/
   .home__img{
-    width: 200px;
+    width: 300px;
     bottom: 10%;
+   
+  
+  
   }
 
   .about__container{
