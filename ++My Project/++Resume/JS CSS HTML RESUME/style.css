@@ -305,7 +305,7 @@ img {
 }
 .skills__bar {
   position: absolute;
-  left: 0rem;
+  left: 1.6rem;
   bottom: 0;
   background-color: var(--first-color);
   height: 0.25rem;
@@ -319,16 +319,16 @@ img {
   width: 70%;
 }
 .skills__js {
-  width: 60%;
+  width: 55%;
 }
 .skills__english {
-  width: 95%;
+  width: 90%;
 }
 .skills__problem {
   width: 85%;
 }
 .skills__creativity {
-  width: 86%;
+  width: 80%;
 }
 .skills__m-c {
   width: 80%;
