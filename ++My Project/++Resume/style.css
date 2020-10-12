@@ -147,7 +147,7 @@ img {
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-image: linear-gradient(100deg,var(--first-color),rgb(33, 185, 40));
+    background-image: linear-gradient(100deg,var(--second-color),var(--first-color));
     /* background-color: var(--second-color); */
     transition: 0.5s;
     border-radius: 1.2rem;
@@ -280,6 +280,8 @@ img {
 }
 .skills__text {
   margin-bottom: var(--mb-4);
+  font-size: 20px;
+  text-align: center;
 }
 .skills__data {
   display: flex;
@@ -411,7 +413,7 @@ img {
     top: 3rem;
   }
   .nav{
-    height calc(var(--header-height) + 1rem): ;
+    height: calc(var(--header-height) + 1rem): ;
   }
   .nav__list {
     display: flex;
@@ -466,7 +468,7 @@ img {
   .work__container{
    grid-template-columns: repeat(3, 1fr);
    grid-template-rows: repeat(2, 1fr);
-   columns-gap: 2rem;
+   column-gap: 2rem;
   }
 
   /*Used for user input Contact*/
