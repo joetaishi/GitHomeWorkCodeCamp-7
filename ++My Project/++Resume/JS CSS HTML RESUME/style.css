@@ -313,13 +313,13 @@ img {
   z-index: var(--z-back);
 }
 .skills__html {
-  width: 70%;
+  width: 75%;
 }
 .skills__css {
-  width: 65%;
+  width: 70%;
 }
 .skills__js {
-  width: 55%;
+  width: 60%;
 }
 .skills__english {
   width: 86%;
@@ -328,10 +328,10 @@ img {
   width: 80%;
 }
 .skills__creativity {
-  width: 80%;
+  width: 76%;
 }
 .skills__m-c {
-  width: 75%;
+  width: 80%;
 }
 .skills__img {
   display: block;
