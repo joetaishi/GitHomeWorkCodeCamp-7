@@ -82,19 +82,23 @@ h1 {
 .popup-container {
   background-color: rgb(211, 98, 6);
   position: fixed;
-  top: 0;
+  /* top: 0;
   bottom: 0;
   left: 0;
-  right: 0;
+  right: 0; */
   display: flex;
-  display: none;
+  /* display: none; */
   align-items: center;
   justify-content: center;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 .popup {
   background: rgb(189, 5, 5);
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 15px 10px 3px black;
   padding: 20px;
   text-align: center;
