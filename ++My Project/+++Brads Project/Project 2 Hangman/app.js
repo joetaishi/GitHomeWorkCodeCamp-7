@@ -10,7 +10,7 @@ const figureParts = document.querySelectorAll('.figure-part');
 
 
 
-const words = ['magic', 'blueballs', 'chicken', 'bunny', 'rainbow'];
+const words = ['arsenal', 'liverpool', 'chelsea', 'spur', 'everton', 'leicester', 'newcastle', 'fulham', 'swansea', 'leeds'];
 
 let selectedWord = words[Math.floor(Math.random() * words.length)];
 
@@ -31,7 +31,7 @@ ${correctLetters.includes(letter) ? letter : ''}</span>`).join('')
 
 
   if (innerWord === selectedWord) {
-    finalMessage.innerText = 'Congratulation! You Won!! :D';
+    finalMessage.innerText = 'Congratulation! You Survived!! :D';
     popup.style.display = 'flex';
   }
 }
@@ -54,7 +54,7 @@ function updateWrongLettersEl() {
   });
   //Check if lost//
   if (wrongLetters.length === figureParts.length) {
-    finalMessage.innerText = 'Unfortunately You lost :(';
+    finalMessage.innerText = 'You ded... :(';
     popup.style.display = 'flex';
   }
 
