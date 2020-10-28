@@ -9,4 +9,12 @@ var app = new Vue({
     cart: 0
   },
 
+
+  methods: {
+    addToCart: function () {
+      this.cart += 1
+    }
+
+  },
+
 })
