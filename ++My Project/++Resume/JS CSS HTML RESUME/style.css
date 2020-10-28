@@ -321,14 +321,14 @@ img {
 .skills__js {
   width: 60%;
 }
+.skills__vue {
+  width: 30%;
+}
 .skills__english {
   width: 86%;
 }
 .skills__problem {
   width: 80%;
-}
-.skills__vue {
-  width: 30%;
 }
 .skills__m-c {
   width: 80%;
